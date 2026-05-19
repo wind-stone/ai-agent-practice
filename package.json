@@ -1,0 +1,38 @@
+{
+    "name": "ai-agent-practice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "dev:web": "pnpm --filter web dev"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@langchain/core": "^1.1.47",
+        "@langchain/openai": "^1.4.6",
+        "chalk": "^5.6.2",
+        "dotenv": "^17.4.2",
+        "zod": "^4.4.3"
+    },
+    "devDependencies": {
+        "@types/node": "^25.9.0",
+        "turbo": "^2.9.14",
+        "typescript": "^6.0.3"
+    },
+    "json-comments": {
+        "tips": "Please install the JsonComments plugin to enable commenting functionality for JSON files, see: https://github.com/zhangfisher/json_comments_extension",
+        "package.json": {
+            "scripts.dev:web": "单独启动 web 应用",
+            "scripts.dev": "一键启动所有应用的开发环境",
+            "scripts.build": "一键构建所有项目"
+        },
+        "packages/shared/package.json": {
+            "exports...default": "在执行 pnpm build 进行生产打包时，由于环境不是 development，它会回退到 default 字段，从而引入编译好的 dist/index.js",
+            "exports...development": "当你在本地执行 pnpm dev 等开发命令时，打包工具会优先匹配这个字段"
+        }
+    }
+}

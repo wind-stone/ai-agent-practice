@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        // 启用所有严格类型检查选项
+        "strict": true,
+        // 目标 ECMAScript 版本
+        "target": "ESNext",
+        // 模块解析策略（Node.js 项目推荐 NodeNext 或 Node16）
+        "moduleResolution": "nodenext",
+        // 允许编译器跳过对 .d.ts 文件的类型检查（提升编译速度）
+        "skipLibCheck": false,
+        // 确保文件名大小写一致性
+        "forceConsistentCasingInFileNames": true,
+        // 允许导入 JSON 模块
+        "resolveJsonModule": true,
+        // 确保每个文件都能被独立转译（Turborepo 构建时非常有用）
+        "isolatedModules": true,
+        // 开启 ES 模块与 CommonJS 模块的互操作性
+        "esModuleInterop": true,
+        // 【关键】根目录通常只负责类型检查，不直接输出编译产物
+        "noEmit": false,
+        "allowJs": true
+    },
+
+    // 排除掉不需要 TS 检查的目录
+    "exclude": ["node_modules", "**/dist"]
+}

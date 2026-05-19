@@ -1,0 +1,13 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "pipeline": {
+        "build": {
+            "dependsOn": ["^build"], // 构建前需要先构建它所依赖的其他包
+            "outputs": ["dist/**"] // 指定构建产物目录，用于缓存
+        },
+        "dev": {
+            "cache": false, // 开发模式不需要缓存
+            "persistent": true // 标记为常驻进程
+        }
+    }
+}
