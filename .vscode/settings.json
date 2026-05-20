@@ -7,5 +7,11 @@
         "**/Thumbs.db": true,
         "**/node_modules": false
     },
-    "cSpell.words": ["deepseek", "langchain", "ollama", "qwen"]
+    "cSpell.words": [
+        "deepseek",
+        "langchain",
+        "modelcontextprotocol",
+        "ollama",
+        "qwen"
+    ]
 }
