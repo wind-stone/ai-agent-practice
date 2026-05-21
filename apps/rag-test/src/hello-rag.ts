@@ -1,6 +1,6 @@
 import { Document } from '@langchain/core/documents';
 import { MemoryVectorStore } from '@langchain/classic/vectorstores/memory';
-import { getModelClient, getEmbeddingsModel } from '@llm/shared';
+import { getLlmModel, getEmbeddingsModel } from '@llm/shared';
 import { OpenAIEmbeddings } from '@langchain/openai';
 
 const documents = [
@@ -70,7 +70,7 @@ const documents = [
 ];
 
 (async () => {
-    const model = getModelClient({
+    const model = getLlmModel({
         provider: 'qwen',
     });
 

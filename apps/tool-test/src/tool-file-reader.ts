@@ -7,10 +7,10 @@ import {
     SystemMessage,
     ToolMessage,
 } from '@langchain/core/messages';
-import { getModelClient } from '@llm/shared';
+import { getLlmModel } from '@llm/shared';
 
 (async () => {
-    const model = getModelClient({
+    const model = getLlmModel({
         provider: 'deepseek',
         useCache: false,
     });

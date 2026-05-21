@@ -6,14 +6,14 @@ import {
     ToolMessage,
 } from '@langchain/core/messages';
 import {
-    getModelClient,
+    getLlmModel,
     readFileTool,
     writeFileTool,
     listDirectoryTool,
     executeCommandTool,
 } from '@llm/shared';
 
-const model = getModelClient({
+const model = getLlmModel({
     provider: 'deepseek',
     useCache: false,
 });

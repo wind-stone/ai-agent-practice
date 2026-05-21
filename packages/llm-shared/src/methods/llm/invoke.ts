@@ -1,5 +1,5 @@
 import { AI_PROVIDERS, type AI_PROVIDER_NAME } from '../../constants/index.js';
-import { getModelClient } from './client.js';
+import { getLlmModel } from './client.js';
 import { tool } from '@langchain/core/tools';
 import { type BaseMessageLike } from '@langchain/core/messages';
 
@@ -17,7 +17,7 @@ export async function callAI({
     stream?: boolean;
     tools?: ReturnType<typeof tool>[];
 }) {
-    const client = getModelClient({ provider });
+    const client = getLlmModel({ provider });
 
     if (tools?.length) {
         client.bindTools(tools);

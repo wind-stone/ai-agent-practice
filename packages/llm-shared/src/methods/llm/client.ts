@@ -3,7 +3,7 @@ import { ChatOpenAI } from '@langchain/openai';
 
 const clientCache = new Map<AI_PROVIDER_NAME, ChatOpenAI>();
 
-export function getModelClient({
+export function getLlmModel({
     provider,
     useCache = true,
     modelName,

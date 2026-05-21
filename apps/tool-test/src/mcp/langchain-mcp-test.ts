@@ -7,10 +7,10 @@ import {
 } from '@langchain/core/messages';
 import { MultiServerMCPClient } from '@langchain/mcp-adapters';
 import chalk from 'chalk';
-import { getModelClient } from '@llm/shared';
+import { getLlmModel } from '@llm/shared';
 
 (async () => {
-    const model = getModelClient({
+    const model = getLlmModel({
         provider: 'ollama',
         modelName: 'qwen3:32b',
     });
