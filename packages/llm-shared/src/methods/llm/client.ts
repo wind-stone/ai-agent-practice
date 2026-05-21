@@ -6,16 +6,18 @@ const clientCache = new Map<AI_PROVIDER_NAME, ChatOpenAI>();
 export function getModelClient({
     provider,
     useCache = true,
+    modelName,
 }: {
     provider: AI_PROVIDER_NAME;
     useCache?: boolean;
+    modelName?: string;
 }): ChatOpenAI {
     if (useCache && clientCache.has(provider)) {
         return clientCache.get(provider)!;
     }
     const config = AI_PROVIDERS[provider];
     const client = new ChatOpenAI({
-        modelName: config.defaultModel,
+        modelName: modelName || config.defaultModel,
         apiKey: config.apiKey,
         temperature: 0,
         configuration: {

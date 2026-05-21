@@ -24,7 +24,7 @@ export const AI_PROVIDERS = {
         type: 'openai-compatible',
         baseURL: 'http://localhost:11434/v1',
         apiKey: 'ollama',
-        defaultModel: 'qwen2.5',
+        defaultModel: 'deepseek-r1:32b',
     },
     claude: {
         type: 'anthropic',

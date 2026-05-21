@@ -12,6 +12,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@langchain/classic": "^1.0.33",
         "@langchain/core": "^1.1.47",
         "@langchain/mcp-adapters": "^1.1.3",
         "@langchain/openai": "^1.4.6",

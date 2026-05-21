@@ -11,7 +11,8 @@ import { getModelClient } from '@llm/shared';
 
 (async () => {
     const model = getModelClient({
-        provider: 'deepseek',
+        provider: 'ollama',
+        modelName: 'qwen3:32b',
     });
 
     const mcpClient = new MultiServerMCPClient({
