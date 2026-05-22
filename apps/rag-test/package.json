@@ -11,6 +11,7 @@
     "license": "ISC",
     "packageManager": "pnpm@10.33.4",
     "dependencies": {
-        "@llm/shared": "workspace:*"
+        "@llm/shared": "workspace:*",
+        "js-tiktoken": "^1.0.21"
     }
 }

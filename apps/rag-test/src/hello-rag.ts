@@ -1,7 +1,6 @@
 import { Document } from '@langchain/core/documents';
 import { MemoryVectorStore } from '@langchain/classic/vectorstores/memory';
 import { getLlmModel, getEmbeddingsModel } from '@llm/shared';
-import { OpenAIEmbeddings } from '@langchain/openai';
 
 const documents = [
     new Document({
