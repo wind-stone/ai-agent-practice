@@ -6,9 +6,11 @@ const embeddingsCache = new Map<AI_PROVIDER_NAME, OpenAIEmbeddings>();
 export function getEmbeddingsModel({
     provider,
     useCache = false,
+    dimensions = 1024,
 }: {
     provider: AI_PROVIDER_NAME;
     useCache?: boolean;
+    dimensions?: number;
 }): OpenAIEmbeddings {
     if (useCache && embeddingsCache.has(provider)) {
         return embeddingsCache.get(provider)!;
@@ -20,6 +22,11 @@ export function getEmbeddingsModel({
         configuration: {
             baseURL: config.baseURL,
         },
+        /**
+         * The number of dimensions the resulting output embeddings should have.
+         * Only supported in `text-embedding-3` and later models.
+         */
+        dimensions,
     });
     useCache && embeddingsCache.set(provider, embeddings);
     return embeddings;

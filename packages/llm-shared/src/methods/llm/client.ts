@@ -7,10 +7,12 @@ export function getLlmModel({
     provider,
     useCache = true,
     modelName,
+    temperature = 0,
 }: {
     provider: AI_PROVIDER_NAME;
     useCache?: boolean;
     modelName?: string;
+    temperature: number;
 }): ChatOpenAI {
     if (useCache && clientCache.has(provider)) {
         return clientCache.get(provider)!;
@@ -19,7 +21,7 @@ export function getLlmModel({
     const client = new ChatOpenAI({
         modelName: modelName || config.defaultModel,
         apiKey: config.apiKey,
-        temperature: 0,
+        temperature,
         configuration: {
             baseURL: config.baseURL,
         },
