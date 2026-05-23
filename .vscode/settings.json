@@ -16,6 +16,7 @@
         "ollama",
         "qwen",
         "textsplitters",
+        "Tiktoken",
         "zilliz"
     ]
 }

@@ -1,0 +1,134 @@
+{
+    "": {
+        "user_session_001": {
+            "messages": [
+                {
+                    "type": "human",
+                    "data": {
+                        "content": "红烧肉怎么做",
+                        "additional_kwargs": {},
+                        "response_metadata": {}
+                    }
+                },
+                {
+                    "type": "ai",
+                    "data": {
+                        "id": "chatcmpl-871",
+                        "content": "哈哈，红烧肉可是我的拿手好菜！让我来教你做这道经典中华美食吧～（*^▽^*）\n\n【食材准备】\n五花肉500g（选肥瘦相间的梅花肉最棒！）\n冰糖15g（炒糖色用）\n生抽3勺\n老抽1勺（上色用）\n料酒2勺\n八角2颗\n桂皮1小块\n香叶2片\n姜片3片\n清水适量\n\n【步骤详解】\n1️⃣ 焯水去腥：五花肉切3cm见方块，冷水下锅，加2片姜+1勺料酒，大火煮开撇去浮沫，捞出洗净备用（这步很关键！）\n\n2️⃣ 炒糖色：锅里放少量油，加入冰糖小火慢慢炒（记得不停转锅！），等糖变成琥珀色时立刻倒入五花肉翻炒（⚠️注意别炒糊了哦）\n\n3️⃣ 加料炖煮：加入姜片、八角、桂皮、香叶炒香，倒入生抽、老抽翻炒上色。加入开水没过肉块，大火煮开后转小火慢炖1小时（砂锅更香！）\n\n4️⃣ 收汁秘诀：等肉变软烂后开大火收汁，记得不停翻动让肉均匀裹上酱汁，最后撒点葱花就完成啦！\n\n✨小贴士：\n- 炒糖色时如果担心失败，可以用\"老抽+冰糖\"代替\n- 想要更香？加点陈皮或干香菇一起炖！\n- 收汁时如果太稠可以加点水淀粉勾芡\n\n刚出锅的红烧肉肥而不腻，入口即化，配上一碗米饭简直绝了！你第一次尝试的话，记得告诉我你的成果哦～（*^▽^*）",
+                        "additional_kwargs": {},
+                        "response_metadata": {
+                            "tokenUsage": {
+                                "promptTokens": 34,
+                                "completionTokens": 799,
+                                "totalTokens": 833
+                            },
+                            "finish_reason": "stop",
+                            "model_provider": "openai",
+                            "model_name": "qwen3:32b",
+                            "usage": {
+                                "prompt_tokens": 34,
+                                "completion_tokens": 799,
+                                "total_tokens": 833
+                            },
+                            "system_fingerprint": "fp_ollama"
+                        },
+                        "type": "ai",
+                        "tool_calls": [],
+                        "invalid_tool_calls": [],
+                        "usage_metadata": {
+                            "output_tokens": 799,
+                            "input_tokens": 34,
+                            "total_tokens": 833,
+                            "input_token_details": {},
+                            "output_token_details": {}
+                        }
+                    }
+                },
+                {
+                    "type": "human",
+                    "data": {
+                        "content": "好吃吗？",
+                        "additional_kwargs": {},
+                        "response_metadata": {}
+                    }
+                },
+                {
+                    "type": "ai",
+                    "data": {
+                        "id": "chatcmpl-483",
+                        "content": "啊呀，光是想想就让人流口水啦！（*^▽^*） 红烧肉可是中华美食里的\"国民美食\"呢！\n\n这道菜最绝的就是\"肥而不腻，瘦而不柴\"的口感！肥肉部分经过慢炖后变得软糯Q弹，入口即化，瘦肉则保持了恰到好处的弹性。酱汁浓郁咸香，带着微微的甜味，每一口都让人欲罢不能！\n\n我每次做这道菜，家里人都会抢着吃呢～特别是刚出锅的时候，热腾腾的肉块裹着亮晶晶的酱汁，光是看着就让人食欲大开！配上一碗白米饭，用筷子夹一块肉在米饭上轻轻一压，那叫一个香啊！\n\n你要是做成功了，记得告诉我哦～我可以教你一些升级版的做法，比如加点红酒或者用高压锅更快捷的方法！（*^▽^*）",
+                        "additional_kwargs": {},
+                        "response_metadata": {
+                            "tokenUsage": {
+                                "promptTokens": 474,
+                                "completionTokens": 726,
+                                "totalTokens": 1200
+                            },
+                            "finish_reason": "stop",
+                            "model_provider": "openai",
+                            "model_name": "qwen3:32b",
+                            "usage": {
+                                "prompt_tokens": 474,
+                                "completion_tokens": 726,
+                                "total_tokens": 1200
+                            },
+                            "system_fingerprint": "fp_ollama"
+                        },
+                        "type": "ai",
+                        "tool_calls": [],
+                        "invalid_tool_calls": [],
+                        "usage_metadata": {
+                            "output_tokens": 726,
+                            "input_tokens": 474,
+                            "total_tokens": 1200,
+                            "input_token_details": {},
+                            "output_token_details": {}
+                        }
+                    }
+                },
+                {
+                    "type": "human",
+                    "data": {
+                        "content": "需要哪些食材？",
+                        "additional_kwargs": {},
+                        "response_metadata": {}
+                    }
+                },
+                {
+                    "type": "ai",
+                    "data": {
+                        "id": "chatcmpl-690",
+                        "content": "让我来给你列个详细的食材清单吧！（*^▽^*） 红烧肉的食材其实很简单的，主要就是这些：\n\n【主料】\n五花肉 500g（建议选三层五花，肥瘦相间最美味！）\n\n【调料】\n1️⃣ 炒糖色：冰糖 15g（没有冰糖可以用白砂糖代替）\n2️⃣ 调味料：\n- 生抽 3勺（推荐用老抽，颜色更漂亮）\n- 老抽 1勺（上色用，可选）\n- 料酒 2勺\n3️⃣ 香料：\n- 八角 2颗（增香神器！）\n- 桂皮 1小块（没有可以不放）\n- 香叶 2片（让香味更立体）\n- 姜片 3-5片（去腥必备）\n4️⃣ 其他：\n- 清水 适量（建议用开水）\n- 盐 适量（最后调味用）\n\n✨小惊喜：\n- 如果你喜欢更丰富的口感，可以加：\n  - 干香菇 3-5朵（泡发后）\n  - 陈皮 1小块（去腥增香）\n  - 红酒 50ml（让肉更软烂）\n\n💡温馨提示：\n- 食材分量可以根据人数增减，保持比例就好\n- 没有老抽的话，可以只用生抽，颜色会浅一些\n- 想要更香？可以加点花椒或者山楂片！\n\n这些材料在超市或者菜市场都能买到哦～准备好这些，我们就能开始做这道让人垂涎三尺的红烧肉啦！（*^▽^*）",
+                        "additional_kwargs": {},
+                        "response_metadata": {
+                            "tokenUsage": {
+                                "promptTokens": 694,
+                                "completionTokens": 643,
+                                "totalTokens": 1337
+                            },
+                            "finish_reason": "stop",
+                            "model_provider": "openai",
+                            "model_name": "qwen3:32b",
+                            "usage": {
+                                "prompt_tokens": 694,
+                                "completion_tokens": 643,
+                                "total_tokens": 1337
+                            },
+                            "system_fingerprint": "fp_ollama"
+                        },
+                        "type": "ai",
+                        "tool_calls": [],
+                        "invalid_tool_calls": [],
+                        "usage_metadata": {
+                            "output_tokens": 643,
+                            "input_tokens": 694,
+                            "total_tokens": 1337,
+                            "input_token_details": {},
+                            "output_token_details": {}
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "name": "milvus-test",
+    "name": "memory-test",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -9,10 +9,9 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "packageManager": "pnpm@10.33.4",
     "dependencies": {
         "@llm/shared": "workspace:*",
-        "epub2": "^3.0.2",
-        "html-to-text": "^10.0.0"
-    }
+        "js-tiktoken": "^1.0.21"
+    },
+    "packageManager": "pnpm@10.33.4"
 }
