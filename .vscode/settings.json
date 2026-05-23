@@ -12,7 +12,10 @@
         "langchain",
         "Milvus",
         "modelcontextprotocol",
+        "nlist",
         "ollama",
-        "qwen"
+        "qwen",
+        "textsplitters",
+        "zilliz"
     ]
 }
