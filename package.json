@@ -28,8 +28,10 @@
     },
     "devDependencies": {
         "@types/node": "^25.9.0",
+        "eslint": "^10.4.0",
         "turbo": "^2.9.14",
-        "typescript": "^6.0.3"
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.59.4"
     },
     "json-comments": {
         "tips": "Please install the JsonComments plugin to enable commenting functionality for JSON files, see: https://github.com/zhangfisher/json_comments_extension",

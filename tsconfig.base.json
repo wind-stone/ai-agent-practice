@@ -18,7 +18,10 @@
         "esModuleInterop": true,
         // 【关键】根目录通常只负责类型检查，不直接输出编译产物
         "noEmit": false,
-        "allowJs": true
+        "allowJs": true,
+
+        "noUnusedLocals": true, // 检查并报错未使用的局部变量
+        "noUnusedParameters": true // 检查并报错未使用的函数参数
     },
 
     // 排除掉不需要 TS 检查的目录
