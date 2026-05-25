@@ -9,6 +9,7 @@
     },
     "cSpell.words": [
         "deepseek",
+        "Kwargs",
         "langchain",
         "Milvus",
         "modelcontextprotocol",
@@ -17,6 +18,7 @@
         "qwen",
         "textsplitters",
         "Tiktoken",
+        "wechat",
         "zilliz"
     ]
 }
