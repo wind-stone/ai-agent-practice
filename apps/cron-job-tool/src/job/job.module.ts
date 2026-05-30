@@ -1,0 +1,14 @@
+import { Module, forwardRef } from '@nestjs/common';
+import { JobService } from './job.service';
+import { JobAgentService } from '../ai/job-agent.service';
+import { ToolModule } from '../tool/tool.module';
+
+@Module({
+    imports: [
+        // 解决循环引用的问题
+        forwardRef(() => ToolModule),
+    ],
+    providers: [JobService, JobAgentService],
+    exports: [JobService],
+})
+export class JobModule {}

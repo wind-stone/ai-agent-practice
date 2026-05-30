@@ -8,6 +8,7 @@
         "**/node_modules": false
     },
     "cSpell.words": [
+        "BOCHA",
         "deepseek",
         "Kwargs",
         "langchain",
