@@ -1,4 +1,8 @@
 # pnpm-workspace.yaml
 packages:
-    - 'apps/*' # 存放独立的应用（如前端网页、后台管理、移动端等）
-    - 'packages/*' # 存放共享的库（如公共组件、工具函数、类型定义等）
+  - 'apps/*' # 存放独立的应用（如前端网页、后台管理、移动端等）
+  - 'packages/*' # 存放共享的库（如公共组件、工具函数、类型定义等）
+allowBuilds:
+  '@nestjs/core': false
+  protobufjs: false
+  unrs-resolver: false
